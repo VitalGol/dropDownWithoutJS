@@ -1,0 +1,58 @@
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  width: 300px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 20px;
+  label {
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin: 10px auto;
+    background: url('./img/icon-down.png');
+    cursor: pointer;
+  }
+}
+
+.goods {
+  max-width: 400px;
+  height: 200px;
+  padding: 20px 0;
+  display: flex;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+#pushDown {
+  display: none;
+  &+.description {
+    display: none;
+  }
+  &:checked+.description {
+    display: block;
+    transition: 2s;
+    &+label {
+      background: url('img/icon-up.png');
+    }
+  }
+}
+
+.description {
+  p {
+    text-align: center;
+  }
+  &>img {
+    width: 49%;
+  }
+}
