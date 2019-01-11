@@ -63,12 +63,10 @@ body {
 
 #pushDown:checked + .description {
   display: block;
-  -webkit-transition: 2s;
-  transition: 2s;
 }
 
 #pushDown:checked + .description + label {
-  background: url("img/icon-up.png");
+  background: url("./img/icon-up.png");
 }
 
 .description p {

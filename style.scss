@@ -35,21 +35,20 @@ body {
 }
 
 #pushDown {
-  display: none;
+	display: none;
   &+.description {
-    display: none;
+		display: none;
   }
   &:checked+.description {
-    display: block;
-    transition: 2s;
+		display: block;
     &+label {
-      background: url('img/icon-up.png');
+      background: url('./img/icon-up.png');
     }
   }
 }
 
 .description {
-  p {
+	p {
     text-align: center;
   }
   &>img {
